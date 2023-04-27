@@ -2,4 +2,4 @@ def resta(a,b):
     resta=a-b
     return resta
 
-print (resta(30,10))
+print ('El resultado de la resta es:',resta(30,10))
