@@ -1,5 +1,5 @@
 def division(a, b):
     if(b != 0):
-        print('El resultado de la división es: ', a / b)
+        return a / b
     else:
-        print('Usted ha ingresado un divisor con valor ', b, ', por lo que no es posible realizar la división.')
+        return "No se ha podido realizar la división, dado que el divisor es 0"
