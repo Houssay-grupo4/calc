@@ -1,7 +1,7 @@
 import Resta
 import division
 import multiplicacion
-import Suma
+import suma
 
 operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division): ")
 
@@ -21,7 +21,7 @@ elif operacion == "multiplicacion":
     print("El resultado de la multiplicación es:", resultado)
 
 elif operacion == "suma":
-    resultado = Suma.suma(a, b)
+    resultado = suma.suma(a, b)
     print("El resultado de la suma es:", resultado)
 
 else:
