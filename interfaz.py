@@ -2,8 +2,8 @@ import Resta
 import division
 import multiplicacion
 import suma
-
-operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division): ")
+import condicionalD
+operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division, condicional doble): ")
 
 a = float(input("Ingrese el primer valor: "))
 b = float(input("Ingrese el segundo valor: "))
@@ -24,5 +24,8 @@ elif operacion == "suma":
     resultado = suma.suma(a, b)
     print("El resultado de la suma es:", resultado)
 
+elif operacion == "condicional doble":
+    resultado = condicionalD.condicional_doble(a, b)
+    
 else:
     print("Operación no válida")
