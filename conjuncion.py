@@ -5,6 +5,5 @@ def conjuncion(a, b):
         a = a * b
     return a
 
-a = conjuncion(a, b)
-print('a =', a)
+
 

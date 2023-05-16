@@ -2,6 +2,7 @@ import Resta
 import division
 import multiplicacion
 import suma
+import conjuncion
 
 operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division): ")
 
@@ -24,5 +25,10 @@ elif operacion == "suma":
     resultado = suma.suma(a, b)
     print("El resultado de la suma es:", resultado)
 
+elif operacion  == "conjuncion":
+  resultado = conjuncion.conjuncion(a, b)
+  print("el resultado de la conjuncion es : ", resultado)
+
 else:
-    print("Operación no válida")
+
+ print("Operación no válida")
