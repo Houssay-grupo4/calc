@@ -4,11 +4,17 @@ import multiplicacion
 import suma
 import conjuncion
 import condicionalD
+import Disyuncion
 
-operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division, condicional doble, conjuncion): ")
+operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division, condicional doble, conjuncion, disyuncion): ")
 
-a = float(input("Ingrese el primer valor: "))
-b = float(input("Ingrese el segundo valor: "))
+if operacion in ["suma", "resta", "multiplicacion", "division"]:
+    a = float(input("Ingrese el primer valor: "))
+    b = float(input("Ingrese el segundo valor: "))
+
+elif operacion == "disyuncion":
+    a = input("Ingrese el primer valor (True o False): ").lower()
+    b = input("Ingrese el segundo valor (True o False): ").lower()
 
 if operacion == "resta":
     resultado = Resta.resta(a, b)
@@ -32,7 +38,10 @@ elif operacion  == "conjuncion":
 
 elif operacion == "condicional doble":
     resultado = condicionalD.condicional_doble(a, b)
+
+elif operacion == "disyuncion":
+    resultado = Disyuncion.disyuncion(a == "true", b == "true")
+    print("El resultado de la disyuncion es:", resultado)
     
 else:
-
- print("Operación no válida")
+    print("Operación no válida")
