@@ -5,17 +5,25 @@ import suma
 import conjuncion
 import condicionalD
 import Disyuncion
-import xor 
+import xor
 
-operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division, condicional doble, conjuncion, disyuncion, xor) : ")
 
-if operacion in ["suma", "resta", "multiplicacion", "division", "condicional doble", "conjuncion", "xor"]:
+operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division, condicional doble, conjuncion, disyuncion, xor : ")
+
+if operacion in ["suma", "resta", "multiplicacion", "division","conjuncion", "condicional doble"]:
     a = float(input("Ingrese el primer valor: "))
     b = float(input("Ingrese el segundo valor: "))
 
 elif operacion == "disyuncion":
     a = input("Ingrese el primer valor (True o False): ").lower()
     b = input("Ingrese el segundo valor (True o False): ").lower()
+
+
+else:
+     operacion == "xor"
+     a = int(input("Ingrese el primer número: "))
+     b = int(input("Ingrese el segundo número: "))
+
 
 if operacion == "resta":
     resultado = Resta.resta(a, b)
@@ -45,8 +53,9 @@ elif operacion == "disyuncion":
     print("El resultado de la disyuncion es:", resultado)
 
 elif operacion == "xor":
-    resultado = xor.xor(a, b)
-    print("El resultado xor para los valores ingresados es : ", resultado )    
+     resultado = xor.xor(a, b)
+     
+         
     
 else:
     print("Operación no válida")
