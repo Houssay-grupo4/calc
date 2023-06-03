@@ -7,9 +7,9 @@ import condicionalD
 import Disyuncion
 import xor 
 
-operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division, condicional doble, conjuncion, disyuncion, xor : ")
+operacion = input("Escriba una operación de entre estas (suma, resta, multiplicacion, division, condicional doble, conjuncion, disyuncion, xor) : ")
 
-if operacion in ["suma", "resta", "multiplicacion", "division"]:
+if operacion in ["suma", "resta", "multiplicacion", "division", "condicional doble", "conjuncion", "xor"]:
     a = float(input("Ingrese el primer valor: "))
     b = float(input("Ingrese el segundo valor: "))
 

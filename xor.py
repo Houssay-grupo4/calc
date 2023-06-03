@@ -1,10 +1,4 @@
 def xor(a, b):
-    if bool(a) ^ bool(b):
-        return True
-    else:
-        return False
+    resultado = int(a) ^ int(b)
+    return resultado
 
-a = True
-b = False
-
-resultado = xor(a, b)
